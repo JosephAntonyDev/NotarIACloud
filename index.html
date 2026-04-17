@@ -7,13 +7,13 @@
   <meta name="theme-color" content="#740A03" />
   <title>NotarIA Cloud — Sistema SaaS para Notarías</title>
 
-  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
+  <link rel="icon" type="image/svg+xml" href="frontend/assets/images/logo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="frontend/css/main.css" />
+  <link rel="stylesheet" href="frontend/css/animations.css" />
 
   <script>
     tailwind.config = {
@@ -56,7 +56,7 @@
             'soft':         '0 20px 50px -15px rgba(20, 16, 11, 0.1)',
           },
           backgroundImage: {
-            'grain':  "url('assets/images/grain.svg')",
+            'grain':  "url('frontend/assets/images/grain.svg')",
             'gradient-hero': 'linear-gradient(135deg, #740A03 0%, #440501 45%, #14100b 100%)',
           },
         },
@@ -71,7 +71,7 @@
     <nav class="mx-auto max-w-7xl px-6 lg:px-8 py-4 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3 group">
         <div class="w-11 h-11 rounded-xl bg-primary-600 flex items-center justify-center shadow-glow-primary transition-transform duration-500 group-hover:rotate-6">
-          <img src="assets/images/logo.svg" alt="NotarIA Cloud" class="w-7 h-7" />
+          <img src="frontend/assets/images/logo.svg" alt="NotarIA Cloud" class="w-7 h-7" />
         </div>
         <div class="flex flex-col leading-tight">
           <span class="font-serif text-lg font-bold text-primary-600 tracking-tight">NotarIA <span class="text-gold-500">Cloud</span></span>
@@ -200,7 +200,7 @@
               <!-- Sidebar -->
               <aside class="w-16 bg-primary-600 flex flex-col items-center py-4 gap-3">
                 <div class="w-8 h-8 rounded-lg bg-white/90 flex items-center justify-center">
-                  <img src="assets/images/logo.svg" class="w-5 h-5" alt="logo"/>
+                  <img src="frontend/assets/images/logo.svg" class="w-5 h-5" alt="logo"/>
                 </div>
                 <div class="w-px h-4 bg-white/20"></div>
                 <button class="w-9 h-9 rounded-lg bg-white/15 flex items-center justify-center text-white"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg></button>
@@ -785,7 +785,7 @@
       <div class="md:col-span-2">
         <a href="#" class="flex items-center gap-3 mb-5">
           <div class="w-12 h-12 rounded-xl bg-primary-600 flex items-center justify-center shadow-glow-primary">
-            <img src="assets/images/logo.svg" alt="logo" class="w-7 h-7" />
+            <img src="frontend/assets/images/logo.svg" alt="logo" class="w-7 h-7" />
           </div>
           <div class="flex flex-col leading-tight">
             <span class="font-serif text-xl font-bold text-white">NotarIA <span class="text-gold-400">Cloud</span></span>
@@ -824,6 +824,6 @@
   </footer>
 
   <!-- ============ JS MVC ============ -->
-  <script type="module" src="js/app.js"></script>
+  <script type="module" src="frontend/js/app.js"></script>
 </body>
 </html>

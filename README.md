@@ -6,10 +6,11 @@ Landing page comercial del sistema SaaS de gestión notarial **NotarIA Cloud**. 
 
 ```
 notarial_saas_landing/
+├── index.html              # ⚡ Entrypoint en la raíz (GitHub Pages)
+├── README.md
 ├── api/                    # Placeholder del backend público
 │   └── README.md
 └── frontend/
-    ├── index.html          # Entrypoint: marcado de todas las secciones
     ├── assets/
     │   └── images/
     │       ├── logo.svg    # Logo NotarIA (isotipo dorado)
@@ -40,25 +41,44 @@ notarial_saas_landing/
             └── RevealController.js     # reveal-on-scroll con IntersectionObserver
 ```
 
+> El `index.html` vive en la **raíz del repo** para que GitHub Pages pueda servirlo directamente. Todas las rutas (CSS, JS, imágenes) apuntan a `frontend/...`.
+
 ## Cómo correrla
 
-No requiere build. Solo necesita un servidor HTTP estático:
+No requiere build. Solo necesita un servidor HTTP estático **desde la raíz del proyecto** (no desde `frontend/`):
 
 ```bash
 # opción 1: Python (cualquier 3.x)
-cd frontend
+cd notarial_saas_landing
 python -m http.server 5500
 
 # opción 2: Node
-npx serve frontend -l 5500
+npx serve . -l 5500
 
 # opción 3: VSCode Live Server
-# click derecho sobre frontend/index.html → "Open with Live Server"
+# click derecho sobre index.html (raíz) → "Open with Live Server"
 ```
 
 Luego abra `http://localhost:5500`.
 
 > ⚠ Debe servirse por HTTP, no con `file://`, porque `app.js` usa `import` (módulos ES).
+
+## Desplegar en GitHub Pages
+
+El `index.html` está en la raíz del repo justamente para esto — no requiere build ni configuración de `source directory`:
+
+1. En GitHub, ir a **Settings → Pages**.
+2. En **Source**, seleccionar la rama (`main` o `master`) y la carpeta `/ (root)`.
+3. Guardar. En 1–2 minutos la landing estará en `https://<usuario>.github.io/<repo>/`.
+
+No hace falta tocar nada más. Las rutas del HTML son relativas (`frontend/...`), así que funcionan tanto en `username.github.io/repo/` como en un dominio propio.
+
+### Dominio personalizado (opcional)
+
+Si quiere un dominio propio (ej. `notaria.cloud`):
+
+1. Crear un archivo `CNAME` en la raíz del repo con el dominio dentro.
+2. En su proveedor DNS, apuntar un registro `CNAME` a `<usuario>.github.io`.
 
 ## Paleta y tipografía
 
