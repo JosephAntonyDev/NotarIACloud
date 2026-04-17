@@ -113,7 +113,7 @@
   </header>
 
   <!-- ================== HERO ================== -->
-  <section id="hero" class="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden bg-gradient-hero">
+  <section id="hero" class="relative min-h-screen flex items-center pt-24 md:pt-28 pb-16 md:pb-20 overflow-hidden bg-gradient-hero">
     <!-- Decorative layers -->
     <div class="absolute inset-0 opacity-30 bg-grain mix-blend-overlay pointer-events-none"></div>
     <div class="hero-orb hero-orb-1"></div>
@@ -130,15 +130,15 @@
       <rect width="100%" height="100%" fill="url(#grid)"/>
     </svg>
 
-    <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="relative z-10 mx-auto max-w-7xl w-full px-5 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
       <!-- Left text -->
       <div class="text-white">
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur border border-white/20 mb-8 reveal">
+        <div class="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-white/10 backdrop-blur border border-white/20 mb-6 sm:mb-8 reveal">
           <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
-          <span class="text-xs font-semibold tracking-wider uppercase text-gold-400">Versión 2026 disponible</span>
+          <span class="text-[10px] sm:text-xs font-semibold tracking-wider uppercase text-gold-400">Versión 2026 disponible</span>
         </div>
 
-        <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 reveal">
+        <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] sm:leading-[1.05] mb-5 sm:mb-6 reveal">
           Modernice su notaría sin perder la
           <span class="relative inline-block">
             <span class="bg-gradient-to-r from-gold-400 via-gold-500 to-gold-400 bg-clip-text text-transparent">tradición</span>
@@ -146,40 +146,40 @@
           </span>.
         </h1>
 
-        <p class="text-lg md:text-xl text-white/80 leading-relaxed mb-10 max-w-xl reveal">
+        <p class="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed mb-8 sm:mb-10 max-w-xl reveal">
           <strong class="text-white">NotarIA Cloud</strong> es el sistema SaaS que centraliza expedientes, actos, asistencia, auditoría y notificaciones en tiempo real — alojado en su propio servidor local y protegido por VPN. Diseñado para cualquier notaría de México.
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-4 mb-12 reveal">
-          <a href="#contacto" class="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gold-500 text-ink-900 font-bold shadow-glow-gold hover:bg-gold-400 hover:scale-105 transition-all duration-300">
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-10 sm:mb-12 reveal">
+          <a href="#contacto" class="group inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-gold-500 text-ink-900 font-bold text-sm sm:text-base shadow-glow-gold hover:bg-gold-400 hover:scale-105 transition-all duration-300">
             Agendar demostración
-            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </a>
-          <a href="#caracteristicas" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 backdrop-blur border border-white/20 text-white font-semibold hover:bg-white/20 transition-all duration-300">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><circle cx="12" cy="12" r="9" stroke-width="2"/></svg>
+          <a href="#caracteristicas" class="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-white/10 backdrop-blur border border-white/20 text-white font-semibold text-sm sm:text-base hover:bg-white/20 transition-all duration-300">
+            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><circle cx="12" cy="12" r="9" stroke-width="2"/></svg>
             Ver recorrido
           </a>
         </div>
 
         <!-- Stats -->
-        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/10 reveal">
+        <div class="grid grid-cols-3 gap-3 sm:gap-6 pt-6 sm:pt-8 border-t border-white/10 reveal">
           <div>
-            <div class="font-serif text-3xl md:text-4xl font-bold text-gold-400" data-counter="55">0</div>
-            <div class="text-xs uppercase tracking-wider text-white/60 mt-1">Endpoints API</div>
+            <div class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-gold-400" data-counter="55">0</div>
+            <div class="text-[10px] sm:text-xs uppercase tracking-wider text-white/60 mt-1">Endpoints API</div>
           </div>
           <div>
-            <div class="font-serif text-3xl md:text-4xl font-bold text-gold-400" data-counter="100">0</div>
-            <div class="text-xs uppercase tracking-wider text-white/60 mt-1">% Auditado</div>
+            <div class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-gold-400" data-counter="100">0</div>
+            <div class="text-[10px] sm:text-xs uppercase tracking-wider text-white/60 mt-1">% Auditado</div>
           </div>
           <div>
-            <div class="font-serif text-3xl md:text-4xl font-bold text-gold-400" data-counter="24">0</div>
-            <div class="text-xs uppercase tracking-wider text-white/60 mt-1">Horas / 7 días</div>
+            <div class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-gold-400" data-counter="24">0</div>
+            <div class="text-[10px] sm:text-xs uppercase tracking-wider text-white/60 mt-1">Horas / 7 días</div>
           </div>
         </div>
       </div>
 
-      <!-- Right visual: Mock dashboard -->
-      <div class="relative reveal-right">
+      <!-- Right visual: Mock dashboard (hidden on small, visible md+) -->
+      <div class="relative reveal-right hidden md:block">
         <!-- Glow backdrop -->
         <div class="absolute -inset-10 bg-gold-500/20 blur-3xl rounded-full"></div>
 
@@ -281,7 +281,7 @@
           </div>
 
           <!-- Floating notification card -->
-          <div class="absolute -left-8 top-24 bg-white rounded-xl shadow-2xl p-4 border border-ink-100 w-56 float-fast">
+          <div class="absolute -left-8 top-24 bg-white rounded-xl shadow-2xl p-4 border border-ink-100 w-56 float-fast hidden lg:block">
             <div class="flex items-start gap-3">
               <div class="w-9 h-9 rounded-lg bg-primary-600/10 flex items-center justify-center flex-shrink-0">
                 <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
@@ -295,7 +295,7 @@
           </div>
 
           <!-- Floating VPN card -->
-          <div class="absolute -right-6 bottom-12 bg-ink-900 text-white rounded-xl shadow-2xl p-4 w-56 float-slower border border-gold-500/30">
+          <div class="absolute -right-6 bottom-12 bg-ink-900 text-white rounded-xl shadow-2xl p-4 w-56 float-slower border border-gold-500/30 hidden lg:block">
             <div class="flex items-center gap-3 mb-2">
               <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
               <span class="text-[10px] uppercase tracking-wider text-gold-400 font-bold">VPN Activa</span>
@@ -320,46 +320,46 @@
   </section>
 
   <!-- ================== MARQUEE (logos / trust) ================== -->
-  <section class="py-10 bg-white border-y border-ink-100">
-    <div class="max-w-7xl mx-auto px-6">
-      <p class="text-center text-xs uppercase tracking-[0.3em] text-ink-700/60 mb-6">Tecnología de grado empresarial</p>
-      <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 opacity-70">
-        <span class="text-lg font-bold tracking-tight text-ink-700">PostgreSQL</span>
-        <span class="text-lg font-bold tracking-tight text-ink-700">Go • Gin</span>
-        <span class="text-lg font-bold tracking-tight text-ink-700">Redis</span>
-        <span class="text-lg font-bold tracking-tight text-ink-700">WebSocket</span>
-        <span class="text-lg font-bold tracking-tight text-ink-700">Firebase FCM</span>
-        <span class="text-lg font-bold tracking-tight text-ink-700">JWT + BCrypt</span>
-        <span class="text-lg font-bold tracking-tight text-ink-700">Docker</span>
+  <section class="py-8 md:py-10 bg-white border-y border-ink-100">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6">
+      <p class="text-center text-[10px] sm:text-xs uppercase tracking-[0.3em] text-ink-700/60 mb-5 md:mb-6">Tecnología de grado empresarial</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-6 sm:gap-x-10 md:gap-x-12 gap-y-4 md:gap-y-6 opacity-70">
+        <span class="text-sm sm:text-base md:text-lg font-bold tracking-tight text-ink-700">PostgreSQL</span>
+        <span class="text-sm sm:text-base md:text-lg font-bold tracking-tight text-ink-700">Go • Gin</span>
+        <span class="text-sm sm:text-base md:text-lg font-bold tracking-tight text-ink-700">Redis</span>
+        <span class="text-sm sm:text-base md:text-lg font-bold tracking-tight text-ink-700">WebSocket</span>
+        <span class="text-sm sm:text-base md:text-lg font-bold tracking-tight text-ink-700">Firebase FCM</span>
+        <span class="text-sm sm:text-base md:text-lg font-bold tracking-tight text-ink-700">JWT + BCrypt</span>
+        <span class="text-sm sm:text-base md:text-lg font-bold tracking-tight text-ink-700">Docker</span>
       </div>
     </div>
   </section>
 
   <!-- ================== CARACTERÍSTICAS ================== -->
-  <section id="caracteristicas" class="py-24 relative overflow-hidden">
-    <div class="absolute top-0 right-0 w-96 h-96 bg-primary-100 rounded-full blur-3xl opacity-40 -z-10"></div>
+  <section id="caracteristicas" class="py-16 md:py-24 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-72 md:w-96 h-72 md:h-96 bg-primary-100 rounded-full blur-3xl opacity-40 -z-10"></div>
 
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 reveal">
         <span class="inline-block px-4 py-1.5 rounded-full bg-primary-100 text-primary-700 text-xs font-bold uppercase tracking-wider mb-4">Lo que ofrecemos</span>
-        <h2 class="font-serif text-4xl md:text-5xl font-bold text-ink-900 mb-6">Todo lo que su notaría necesita, <span class="text-primary-600">en un solo sistema</span>.</h2>
-        <p class="text-ink-700/80 text-lg leading-relaxed">Una plataforma pensada desde el día a día del notario y el proyectista: expedientes con ciclo de vida, catálogo de actos, asistencia, auditoría, dashboard, y comunicación en tiempo real.</p>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-ink-900 mb-5 md:mb-6">Todo lo que su notaría necesita, <span class="text-primary-600">en un solo sistema</span>.</h2>
+        <p class="text-ink-700/80 text-base sm:text-lg leading-relaxed">Una plataforma pensada desde el día a día del notario y el proyectista: expedientes con ciclo de vida, catálogo de actos, asistencia, auditoría, dashboard, y comunicación en tiempo real.</p>
       </div>
 
-      <div id="featuresGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div id="featuresGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
         <!-- Cards renderizados por JS (view) -->
       </div>
     </div>
   </section>
 
   <!-- ================== FACILITAMOS (cómo cambia el día a día) ================== -->
-  <section class="py-24 bg-gradient-to-b from-ink-50 to-white">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="grid lg:grid-cols-12 gap-12 items-center">
+  <section class="py-16 md:py-24 bg-gradient-to-b from-ink-50 to-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 md:gap-12 items-center">
         <div class="lg:col-span-5 reveal">
           <span class="inline-block px-4 py-1.5 rounded-full bg-gold-400/20 text-gold-600 text-xs font-bold uppercase tracking-wider mb-4">Qué facilitamos</span>
-          <h2 class="font-serif text-4xl md:text-5xl font-bold text-ink-900 mb-6">De pilas de expedientes <span class="text-primary-600">a un flujo ordenado</span>.</h2>
-          <p class="text-ink-700/80 text-lg leading-relaxed mb-8">Reemplazamos Excel, carpetas físicas y mensajes dispersos con un flujo único, trazable y auditado — desde el alta del expediente hasta la firma final.</p>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-ink-900 mb-5 md:mb-6">De pilas de expedientes <span class="text-primary-600">a un flujo ordenado</span>.</h2>
+          <p class="text-ink-700/80 text-base sm:text-lg leading-relaxed mb-8">Reemplazamos Excel, carpetas físicas y mensajes dispersos con un flujo único, trazable y auditado — desde el alta del expediente hasta la firma final.</p>
 
           <div class="space-y-4">
             <div class="flex items-start gap-4">
@@ -459,23 +459,23 @@
   </section>
 
   <!-- ================== SEGURIDAD ================== -->
-  <section id="seguridad" class="py-24 bg-ink-900 text-white relative overflow-hidden">
+  <section id="seguridad" class="py-16 md:py-24 bg-ink-900 text-white relative overflow-hidden">
     <!-- Decorative -->
     <div class="absolute inset-0 opacity-20">
       <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-primary-600/30 via-transparent to-transparent"></div>
     </div>
     <svg class="absolute inset-0 w-full h-full opacity-[0.05]"><pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/></pattern><rect width="100%" height="100%" fill="url(#grid2)"/></svg>
 
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 reveal">
         <span class="inline-block px-4 py-1.5 rounded-full bg-gold-500/20 text-gold-400 text-xs font-bold uppercase tracking-wider mb-4">Seguridad notarial</span>
-        <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">Sus datos jamás salen de <span class="text-gold-400">su notaría</span>.</h2>
-        <p class="text-white/70 text-lg leading-relaxed">Arquitectura de servidor local + VPN. Sin dependencia de nube pública, sin terceros leyendo sus expedientes, sin sorpresas regulatorias.</p>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-5 md:mb-6">Sus datos jamás salen de <span class="text-gold-400">su notaría</span>.</h2>
+        <p class="text-white/70 text-base sm:text-lg leading-relaxed">Arquitectura de servidor local + VPN. Sin dependencia de nube pública, sin terceros leyendo sus expedientes, sin sorpresas regulatorias.</p>
       </div>
 
       <!-- Architecture diagram -->
-      <div class="mb-16 reveal">
-        <div class="bg-white/[0.03] backdrop-blur border border-white/10 rounded-3xl p-8 md:p-12">
+      <div class="mb-12 md:mb-16 reveal">
+        <div class="bg-white/[0.03] backdrop-blur border border-white/10 rounded-3xl p-6 sm:p-8 md:p-12">
           <div class="grid md:grid-cols-3 gap-8 items-center">
             <!-- Usuario remoto -->
             <div class="text-center">
@@ -523,7 +523,7 @@
       </div>
 
       <!-- Security features grid -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 reveal">
         <div class="security-card">
           <div class="w-12 h-12 rounded-xl bg-gold-500/20 flex items-center justify-center text-gold-400 mb-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
@@ -585,31 +585,31 @@
   </section>
 
   <!-- ================== INSTALACIÓN ================== -->
-  <section id="instalacion" class="py-24 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+  <section id="instalacion" class="py-16 md:py-24 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 reveal">
         <span class="inline-block px-4 py-1.5 rounded-full bg-primary-100 text-primary-700 text-xs font-bold uppercase tracking-wider mb-4">Implementación llave en mano</span>
-        <h2 class="font-serif text-4xl md:text-5xl font-bold text-ink-900 mb-6">En <span class="text-primary-600">7 días</span> su notaría está operando.</h2>
-        <p class="text-ink-700/80 text-lg leading-relaxed">Instalamos, configuramos, migramos y capacitamos. Usted solo se preocupa por atender clientes.</p>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-ink-900 mb-5 md:mb-6">En <span class="text-primary-600">7 días</span> su notaría está operando.</h2>
+        <p class="text-ink-700/80 text-base sm:text-lg leading-relaxed">Instalamos, configuramos, migramos y capacitamos. Usted solo se preocupa por atender clientes.</p>
       </div>
 
       <!-- Steps stepper -->
       <div class="relative">
-        <div id="installationSteps" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div id="installationSteps" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
           <!-- Renderizado por JS -->
         </div>
       </div>
 
       <!-- Included box -->
-      <div class="mt-16 bg-gradient-hero rounded-3xl p-8 md:p-12 text-white relative overflow-hidden reveal">
+      <div class="mt-12 md:mt-16 bg-gradient-hero rounded-3xl p-6 sm:p-8 md:p-12 text-white relative overflow-hidden reveal">
         <div class="absolute -right-20 -top-20 w-80 h-80 bg-gold-500/20 rounded-full blur-3xl"></div>
         <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-primary-500/20 rounded-full blur-3xl"></div>
 
         <div class="relative grid md:grid-cols-2 gap-8">
           <div>
             <span class="inline-block px-3 py-1 rounded-full bg-gold-500/20 text-gold-400 text-xs font-bold uppercase tracking-wider mb-4">Incluido siempre</span>
-            <h3 class="font-serif text-3xl md:text-4xl font-bold mb-6 leading-tight">Todo lo que necesita, desde el día 1.</h3>
-            <p class="text-white/70 leading-relaxed">El costo inicial incluye la instalación completa, la migración de sus expedientes históricos y la capacitación de su equipo. Sin sorpresas.</p>
+            <h3 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold mb-5 md:mb-6 leading-tight">Todo lo que necesita, desde el día 1.</h3>
+            <p class="text-white/70 leading-relaxed text-sm sm:text-base">El costo inicial incluye la instalación completa, la migración de sus expedientes históricos y la capacitación de su equipo. Sin sorpresas.</p>
           </div>
           <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
             <li class="included-item">Instalación en servidor local</li>
@@ -627,19 +627,19 @@
   </section>
 
   <!-- ================== PLANES ================== -->
-  <section id="planes" class="py-24 bg-ink-50 relative overflow-hidden">
-    <div class="absolute top-20 right-0 w-96 h-96 bg-primary-100 rounded-full blur-3xl opacity-50 -z-10"></div>
-    <div class="absolute bottom-0 left-0 w-96 h-96 bg-gold-400/10 rounded-full blur-3xl -z-10"></div>
+  <section id="planes" class="py-16 md:py-24 bg-ink-50 relative overflow-hidden">
+    <div class="absolute top-20 right-0 w-72 md:w-96 h-72 md:h-96 bg-primary-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+    <div class="absolute bottom-0 left-0 w-72 md:w-96 h-72 md:h-96 bg-gold-400/10 rounded-full blur-3xl -z-10"></div>
 
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-10 md:mb-14 reveal">
         <span class="inline-block px-4 py-1.5 rounded-full bg-primary-100 text-primary-700 text-xs font-bold uppercase tracking-wider mb-4">Planes transparentes</span>
-        <h2 class="font-serif text-4xl md:text-5xl font-bold text-ink-900 mb-6">Precios adaptados al <span class="text-primary-600">tamaño de su notaría</span>.</h2>
-        <p class="text-ink-700/80 text-lg leading-relaxed">Sin letras chicas. Sin costos por cada descarga. Sin cargos sorpresa por usuario adicional en planes superiores.</p>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-ink-900 mb-5 md:mb-6">Precios adaptados al <span class="text-primary-600">tamaño de su notaría</span>.</h2>
+        <p class="text-ink-700/80 text-base sm:text-lg leading-relaxed">Sin letras chicas. Sin costos por cada descarga. Sin cargos sorpresa por usuario adicional en planes superiores.</p>
       </div>
 
       <!-- Billing toggle -->
-      <div class="flex items-center justify-center gap-4 mb-12 reveal">
+      <div class="flex items-center justify-center gap-3 sm:gap-4 mb-10 md:mb-12 reveal flex-wrap">
         <span id="monthlyLabel" class="text-sm font-semibold text-ink-900">Mensual</span>
         <button id="billingToggle" class="relative w-16 h-8 rounded-full bg-primary-600 transition-colors">
           <span id="billingDot" class="absolute top-1 left-1 w-6 h-6 bg-white rounded-full shadow transition-transform duration-300"></span>
@@ -650,7 +650,7 @@
         </span>
       </div>
 
-      <div id="pricingGrid" class="grid md:grid-cols-3 gap-6 items-stretch max-w-6xl mx-auto">
+      <div id="pricingGrid" class="grid md:grid-cols-3 gap-6 md:gap-6 items-stretch max-w-6xl mx-auto">
         <!-- Renderizado por JS -->
       </div>
 
@@ -661,15 +661,15 @@
   </section>
 
   <!-- ================== ASOCIADAS ================== -->
-  <section id="asociadas" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+  <section id="asociadas" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16 reveal">
         <span class="inline-block px-4 py-1.5 rounded-full bg-gold-400/20 text-gold-600 text-xs font-bold uppercase tracking-wider mb-4">Red NotarIA</span>
-        <h2 class="font-serif text-4xl md:text-5xl font-bold text-ink-900 mb-6">Notarías <span class="text-primary-600">asociadas</span>.</h2>
-        <p class="text-ink-700/80 text-lg leading-relaxed">Notarías que confían en NotarIA Cloud para operar día a día. Una comunidad que crece con cada implementación.</p>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-ink-900 mb-5 md:mb-6">Notarías <span class="text-primary-600">asociadas</span>.</h2>
+        <p class="text-ink-700/80 text-base sm:text-lg leading-relaxed">Notarías que confían en NotarIA Cloud para operar día a día. Una comunidad que crece con cada implementación.</p>
       </div>
 
-      <div id="partnersGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div id="partnersGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 max-w-6xl mx-auto">
         <!-- Renderizado por JS -->
       </div>
 
@@ -684,16 +684,16 @@
   </section>
 
   <!-- ================== CONTACTO ================== -->
-  <section id="contacto" class="py-24 bg-gradient-hero text-white relative overflow-hidden">
+  <section id="contacto" class="py-16 md:py-24 bg-gradient-hero text-white relative overflow-hidden">
     <div class="hero-orb hero-orb-1 opacity-40"></div>
     <div class="hero-orb hero-orb-2 opacity-30"></div>
 
-    <div class="relative max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-start">
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 md:gap-16 items-start">
       <!-- Left -->
       <div class="reveal">
-        <span class="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-gold-400 text-xs font-bold uppercase tracking-wider mb-6">Agende su demostración</span>
-        <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6 leading-tight">Hablemos de su <span class="text-gold-400">notaría</span>.</h2>
-        <p class="text-white/80 text-lg leading-relaxed mb-10">Agendemos una sesión de 30 minutos. Le mostramos el sistema con sus propios casos y usted decide.</p>
+        <span class="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-gold-400 text-xs font-bold uppercase tracking-wider mb-5 md:mb-6">Agende su demostración</span>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-5 md:mb-6 leading-tight">Hablemos de su <span class="text-gold-400">notaría</span>.</h2>
+        <p class="text-white/80 text-base sm:text-lg leading-relaxed mb-8 md:mb-10">Agendemos una sesión de 30 minutos. Le mostramos el sistema con sus propios casos y usted decide.</p>
 
         <ul class="space-y-5">
           <li class="flex items-start gap-4">
@@ -737,7 +737,7 @@
 
       <!-- Form card -->
       <div class="reveal-right">
-        <form id="contactForm" class="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-3xl p-8 space-y-5 shadow-2xl">
+        <form id="contactForm" class="bg-white/[0.04] backdrop-blur-xl border border-white/10 rounded-3xl p-6 sm:p-8 space-y-5 shadow-2xl">
           <div>
             <label class="text-xs uppercase tracking-wider text-white/60 font-bold">Nombre completo</label>
             <input type="text" name="name" required class="mt-2 w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-gold-400 focus:bg-white/10 transition" placeholder="Lic. María González" />
@@ -780,8 +780,8 @@
   </section>
 
   <!-- ================== FOOTER ================== -->
-  <footer class="bg-ink-900 text-white/80 pt-16 pb-8">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-4 gap-10">
+  <footer class="bg-ink-900 text-white/80 pt-12 md:pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 grid sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
       <div class="md:col-span-2">
         <a href="#" class="flex items-center gap-3 mb-5">
           <div class="w-12 h-12 rounded-xl bg-primary-600 flex items-center justify-center shadow-glow-primary">
@@ -813,7 +813,7 @@
         </ul>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/50">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 mt-10 md:mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-white/50 text-center md:text-left">
       <div>&copy; <span id="year"></span> NotarIA Cloud. Todos los derechos reservados.</div>
       <div class="flex gap-5">
         <a href="#" class="hover:text-gold-400 transition">Aviso de privacidad</a>
