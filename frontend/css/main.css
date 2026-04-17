@@ -15,6 +15,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
 }
 
 body {
@@ -22,7 +23,27 @@ body {
   color: #14100b;
   background: #f8f7f5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
+
+img, svg, video { max-width: 100%; height: auto; }
+
+/* Cualquier section nunca debe permitir scroll horizontal.
+   overflow-x: hidden es fallback ampliamente soportado;
+   overflow-x: clip lo sobreescribe en navegadores modernos (mejor comportamiento). */
+section {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+/* Grid items: sin esto, los hijos de un grid pueden
+   "estirarse" con contenido largo (títulos serif) y romper el layout. */
+.grid > * { min-width: 0; }
+
+/* Word wrap defensivo para headlines serif que a veces no rompen palabras largas */
+h1, h2, h3 { overflow-wrap: break-word; word-wrap: break-word; }
 
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', Georgia, serif;
@@ -678,8 +699,130 @@ h1, h2, h3, h4 {
 }
 
 /* ===== Responsive tweaks ===== */
+@media (max-width: 1024px) {
+  html { scroll-padding-top: 72px; }
+  .hero-orb-1 {
+    width: 340px;
+    height: 340px;
+    top: -60px;
+    right: -60px;
+  }
+  .hero-orb-2 {
+    width: 280px;
+    height: 280px;
+    bottom: -80px;
+    left: -60px;
+  }
+  .hero-orb-3 {
+    width: 240px;
+    height: 240px;
+  }
+  /* Reducimos amplitud para que no se salgan del clip en móviles */
+  .hero-orb-1, .hero-orb-2, .hero-orb-3 {
+    animation: none;
+  }
+}
+
 @media (max-width: 768px) {
-  .pricing-card { padding: 2rem 1.5rem; }
+  html { scroll-padding-top: 68px; }
+
+  .feature-card { padding: 1.5rem; border-radius: 1rem; }
+  .feature-card h3 { font-size: 1.1rem; }
+  .feature-card p { font-size: 0.88rem; }
+  .feature-card .icon-wrap {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  .feature-card .tag { font-size: 0.6rem; }
+
+  .pricing-card { padding: 2.5rem 1.5rem 2rem; margin-top: 1.25rem; border-radius: 1.25rem; }
   .pricing-price .amount { font-size: 2.5rem; }
-  .feature-card { padding: 1.5rem; }
+  .pricing-card h3 { font-size: 1.35rem; }
+  .pricing-card .desc { min-height: unset; margin-bottom: 1.25rem; }
+  .pricing-card .cta { padding: 0.85rem 1.25rem; font-size: 0.9rem; }
+  .pricing-features { margin: 0 0 1.5rem 0; }
+  .pricing-features li { font-size: 0.88rem; padding: 0.45rem 0 0.45rem 1.6rem; }
+  .pricing-badge {
+    font-size: 0.65rem;
+    padding: 0.4rem 1rem;
+    top: -12px;
+    letter-spacing: 0.1em;
+  }
+
+  .partner-card { padding: 1.5rem; }
+  .partner-card h3 { font-size: 1.2rem; }
+  .partner-card .partner-seal {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .partner-card .partner-seal svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .partner-card .partner-stats { gap: 1rem; margin-top: 1rem; padding-top: 1rem; }
+  .partner-card .stat-value { font-size: 1.25rem; }
+  .partner-card .partner-badge {
+    font-size: 0.6rem;
+    padding: 0.25rem 0.6rem;
+    letter-spacing: 0.08em;
+  }
+  .partner-card.empty { min-height: 180px; padding: 1.5rem; }
+
+  .installation-step { padding: 1.5rem 1.25rem; border-radius: 1rem; }
+  .installation-step .step-number {
+    font-size: 3rem;
+    top: 0.5rem;
+    right: 1rem;
+  }
+  .installation-step .step-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  .installation-step .step-icon svg {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+  .installation-step h4 { font-size: 1rem; }
+  .installation-step p { font-size: 0.85rem; }
+
+  .security-card { padding: 1.5rem; border-radius: 1rem; }
+  .security-card h4 { font-size: 1rem; }
+
+  .timeline-step { gap: 0.75rem; }
+  .timeline-step::before { left: 9px; top: 22px; bottom: -14px; }
+  .timeline-dot { width: 20px; height: 20px; }
+}
+
+@media (max-width: 480px) {
+  .hero-orb-1 {
+    width: 260px;
+    height: 260px;
+    top: -40px;
+    right: -60px;
+  }
+  .hero-orb-2 {
+    width: 220px;
+    height: 220px;
+    bottom: -60px;
+    left: -60px;
+  }
+  .hero-orb-3 {
+    width: 180px;
+    height: 180px;
+  }
+
+  .pricing-card { padding: 2.25rem 1.25rem 1.75rem; }
+  .pricing-price .amount { font-size: 2.25rem; }
+
+  .feature-card { padding: 1.25rem; }
+
+  .partner-card { padding: 1.25rem; }
+  .installation-step { padding: 1.25rem 1rem; }
+  .installation-step .step-number { font-size: 2.5rem; }
 }

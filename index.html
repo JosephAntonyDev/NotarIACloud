@@ -68,14 +68,14 @@
 
   <!-- ================== NAVBAR ================== -->
   <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500">
-    <nav class="mx-auto max-w-7xl px-6 lg:px-8 py-4 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-3 group">
-        <div class="w-11 h-11 rounded-xl bg-primary-600 flex items-center justify-center shadow-glow-primary transition-transform duration-500 group-hover:rotate-6">
-          <img src="frontend/assets/images/logo.svg" alt="NotarIA Cloud" class="w-7 h-7" />
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3 md:py-4 flex items-center justify-between gap-3">
+      <a href="#" class="flex items-center gap-2 sm:gap-3 group min-w-0">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 rounded-xl bg-primary-600 flex items-center justify-center shadow-glow-primary transition-transform duration-500 group-hover:rotate-6 flex-shrink-0">
+          <img src="frontend/assets/images/logo.svg" alt="NotarIA Cloud" class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7" />
         </div>
-        <div class="flex flex-col leading-tight">
-          <span class="font-serif text-lg font-bold text-primary-600 tracking-tight">NotarIA <span class="text-gold-500">Cloud</span></span>
-          <span class="text-[10px] uppercase tracking-[0.2em] text-ink-700/70">Sistema Notarial SaaS</span>
+        <div class="flex flex-col leading-tight min-w-0">
+          <span class="font-serif text-base sm:text-lg font-bold text-primary-600 tracking-tight truncate">NotarIA <span class="text-gold-500">Cloud</span></span>
+          <span class="hidden sm:block text-[9px] md:text-[10px] uppercase tracking-[0.2em] text-ink-700/70 truncate">Sistema Notarial SaaS</span>
         </div>
       </a>
 
@@ -88,32 +88,38 @@
         <li><a href="#contacto" class="nav-link">Contacto</a></li>
       </ul>
 
-      <div class="flex items-center gap-3">
-        <a href="#contacto" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary-600 text-white text-sm font-semibold shadow-glow-primary hover:bg-primary-700 hover:scale-105 transition-all duration-300">
+      <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+        <a href="#contacto" class="hidden md:inline-flex items-center gap-2 px-4 lg:px-5 py-2 lg:py-2.5 rounded-full bg-primary-600 text-white text-xs lg:text-sm font-semibold shadow-glow-primary hover:bg-primary-700 hover:scale-105 transition-all duration-300">
           Solicitar demo
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
         </a>
-        <button id="menuToggle" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-primary-50 hover:bg-primary-100 transition">
-          <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <button id="menuToggle" aria-label="Abrir menú" class="lg:hidden w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg bg-primary-50 hover:bg-primary-100 transition">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
     </nav>
 
     <!-- Mobile menu -->
     <div id="mobileMenu" class="lg:hidden hidden bg-white/95 backdrop-blur-lg border-t border-ink-100 shadow-lg">
-      <ul class="px-6 py-4 space-y-3 text-sm font-medium">
-        <li><a href="#caracteristicas" class="block py-2">Características</a></li>
-        <li><a href="#seguridad" class="block py-2">Seguridad</a></li>
-        <li><a href="#instalacion" class="block py-2">Instalación</a></li>
-        <li><a href="#planes" class="block py-2">Planes</a></li>
-        <li><a href="#asociadas" class="block py-2">Asociadas</a></li>
-        <li><a href="#contacto" class="block py-2">Contacto</a></li>
+      <ul class="px-5 sm:px-6 py-3 sm:py-4 space-y-1 text-sm font-medium">
+        <li><a href="#caracteristicas" class="block py-2.5 border-b border-ink-100/60">Características</a></li>
+        <li><a href="#seguridad" class="block py-2.5 border-b border-ink-100/60">Seguridad</a></li>
+        <li><a href="#instalacion" class="block py-2.5 border-b border-ink-100/60">Instalación</a></li>
+        <li><a href="#planes" class="block py-2.5 border-b border-ink-100/60">Planes</a></li>
+        <li><a href="#asociadas" class="block py-2.5 border-b border-ink-100/60">Asociadas</a></li>
+        <li><a href="#contacto" class="block py-2.5">Contacto</a></li>
+        <li class="pt-2">
+          <a href="#contacto" class="inline-flex md:hidden items-center justify-center gap-2 w-full px-4 py-3 rounded-full bg-primary-600 text-white text-sm font-semibold shadow-glow-primary">
+            Solicitar demo
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </li>
       </ul>
     </div>
   </header>
 
   <!-- ================== HERO ================== -->
-  <section id="hero" class="relative min-h-screen flex items-center pt-24 md:pt-28 pb-16 md:pb-20 overflow-hidden bg-gradient-hero">
+  <section id="hero" class="relative min-h-screen flex items-center pt-20 sm:pt-24 md:pt-28 pb-14 md:pb-28 overflow-hidden bg-gradient-hero">
     <!-- Decorative layers -->
     <div class="absolute inset-0 opacity-30 bg-grain mix-blend-overlay pointer-events-none"></div>
     <div class="hero-orb hero-orb-1"></div>
@@ -162,18 +168,18 @@
         </div>
 
         <!-- Stats -->
-        <div class="grid grid-cols-3 gap-3 sm:gap-6 pt-6 sm:pt-8 border-t border-white/10 reveal">
+        <div class="grid grid-cols-3 gap-2 sm:gap-6 pt-5 sm:pt-8 border-t border-white/10 reveal">
           <div>
-            <div class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-gold-400" data-counter="55">0</div>
-            <div class="text-[10px] sm:text-xs uppercase tracking-wider text-white/60 mt-1">Endpoints API</div>
+            <div class="font-serif text-xl sm:text-3xl md:text-4xl font-bold text-gold-400 leading-none" data-counter="55">0</div>
+            <div class="text-[9px] sm:text-xs uppercase tracking-wider text-white/60 mt-1.5 sm:mt-2 leading-tight">Endpoints API</div>
           </div>
           <div>
-            <div class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-gold-400" data-counter="100">0</div>
-            <div class="text-[10px] sm:text-xs uppercase tracking-wider text-white/60 mt-1">% Auditado</div>
+            <div class="font-serif text-xl sm:text-3xl md:text-4xl font-bold text-gold-400 leading-none" data-counter="100">0</div>
+            <div class="text-[9px] sm:text-xs uppercase tracking-wider text-white/60 mt-1.5 sm:mt-2 leading-tight">% Auditado</div>
           </div>
           <div>
-            <div class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-gold-400" data-counter="24">0</div>
-            <div class="text-[10px] sm:text-xs uppercase tracking-wider text-white/60 mt-1">Horas / 7 días</div>
+            <div class="font-serif text-xl sm:text-3xl md:text-4xl font-bold text-gold-400 leading-none" data-counter="24">0</div>
+            <div class="text-[9px] sm:text-xs uppercase tracking-wider text-white/60 mt-1.5 sm:mt-2 leading-tight">Horas / 7 días</div>
           </div>
         </div>
       </div>
@@ -310,11 +316,11 @@
       </div>
     </div>
 
-    <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60">
+    <!-- Scroll indicator (sólo visible en pantallas altas) -->
+    <div class="hidden md:block absolute bottom-6 left-1/2 -translate-x-1/2 text-white/60 pointer-events-none">
       <div class="flex flex-col items-center gap-2">
         <span class="text-[10px] uppercase tracking-[0.3em]">Descubra más</span>
-        <div class="w-px h-12 bg-gradient-to-b from-white/50 to-transparent scroll-line"></div>
+        <div class="w-px h-10 lg:h-12 bg-gradient-to-b from-white/50 to-transparent scroll-line"></div>
       </div>
     </div>
   </section>
@@ -362,46 +368,46 @@
           <p class="text-ink-700/80 text-base sm:text-lg leading-relaxed mb-8">Reemplazamos Excel, carpetas físicas y mensajes dispersos con un flujo único, trazable y auditado — desde el alta del expediente hasta la firma final.</p>
 
           <div class="space-y-4">
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-full bg-primary-600 text-white flex items-center justify-center flex-shrink-0 font-bold">1</div>
-              <div>
-                <h4 class="font-bold text-ink-900 mb-1">Alta del expediente</h4>
+            <div class="flex items-start gap-3 sm:gap-4">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary-600 text-white flex items-center justify-center flex-shrink-0 font-bold text-sm sm:text-base">1</div>
+              <div class="min-w-0">
+                <h4 class="font-bold text-ink-900 mb-1 text-base sm:text-lg">Alta del expediente</h4>
                 <p class="text-sm text-ink-700/70">Folio, cliente, oficina, actos y requisitos. Todo en un solo formulario guiado.</p>
               </div>
             </div>
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-full bg-primary-600 text-white flex items-center justify-center flex-shrink-0 font-bold">2</div>
-              <div>
-                <h4 class="font-bold text-ink-900 mb-1">Gestión colaborativa</h4>
+            <div class="flex items-start gap-3 sm:gap-4">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary-600 text-white flex items-center justify-center flex-shrink-0 font-bold text-sm sm:text-base">2</div>
+              <div class="min-w-0">
+                <h4 class="font-bold text-ink-900 mb-1 text-base sm:text-lg">Gestión colaborativa</h4>
                 <p class="text-sm text-ink-700/70">Proyectistas suben documentos, comentan en vivo y ven el estado en tiempo real.</p>
               </div>
             </div>
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 rounded-full bg-primary-600 text-white flex items-center justify-center flex-shrink-0 font-bold">3</div>
-              <div>
-                <h4 class="font-bold text-ink-900 mb-1">Revisión y aprobación</h4>
+            <div class="flex items-start gap-3 sm:gap-4">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-primary-600 text-white flex items-center justify-center flex-shrink-0 font-bold text-sm sm:text-base">3</div>
+              <div class="min-w-0">
+                <h4 class="font-bold text-ink-900 mb-1 text-base sm:text-lg">Revisión y aprobación</h4>
                 <p class="text-sm text-ink-700/70">El notario revisa, aprueba o rechaza con historial y auditoría completa.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="lg:col-span-7 reveal-right">
-          <div class="relative">
+        <div class="lg:col-span-7 reveal-right min-w-0">
+          <div class="relative mx-1 sm:mx-0">
             <!-- Timeline card -->
-            <div class="bg-white rounded-3xl shadow-soft border border-ink-100 p-8 relative overflow-hidden">
+            <div class="bg-white rounded-3xl shadow-soft border border-ink-100 p-5 sm:p-6 md:p-8 relative overflow-hidden">
               <!-- Top bar -->
-              <div class="flex items-center justify-between mb-6">
-                <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 rounded-xl bg-primary-600 flex items-center justify-center">
+              <div class="flex items-start sm:items-center justify-between mb-5 sm:mb-6 gap-3">
+                <div class="flex items-center gap-3 min-w-0">
+                  <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-primary-600 flex items-center justify-center flex-shrink-0">
                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                   </div>
-                  <div>
-                    <div class="font-bold text-ink-900">Expediente F-2051</div>
-                    <div class="text-xs text-ink-700/60">Compraventa de inmueble • Lic. García</div>
+                  <div class="min-w-0">
+                    <div class="font-bold text-ink-900 text-sm sm:text-base truncate">Expediente F-2051</div>
+                    <div class="text-[11px] sm:text-xs text-ink-700/60 truncate">Compraventa de inmueble • Lic. García</div>
                   </div>
                 </div>
-                <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-semibold">En revisión</span>
+                <span class="px-2.5 py-1 rounded-full bg-blue-100 text-blue-700 text-[10px] sm:text-xs font-semibold flex-shrink-0 whitespace-nowrap">En revisión</span>
               </div>
 
               <!-- Progress -->
@@ -447,10 +453,10 @@
             </div>
 
             <!-- Floating bubble -->
-            <div class="absolute -top-6 -right-6 bg-gradient-hero text-white px-5 py-3 rounded-2xl shadow-glow-primary float-slow">
-              <div class="text-[10px] uppercase tracking-wider text-gold-400 font-bold">Tiempo promedio</div>
-              <div class="font-serif text-2xl font-bold">-62%</div>
-              <div class="text-[10px] text-white/70">vs. proceso manual</div>
+            <div class="absolute -top-3 right-2 sm:-top-6 sm:-right-6 bg-gradient-hero text-white px-3 py-2 sm:px-5 sm:py-3 rounded-xl sm:rounded-2xl shadow-glow-primary float-slow max-w-[60%] sm:max-w-none">
+              <div class="text-[9px] sm:text-[10px] uppercase tracking-wider text-gold-400 font-bold whitespace-nowrap">Tiempo promedio</div>
+              <div class="font-serif text-xl sm:text-2xl font-bold leading-none mt-0.5">-62%</div>
+              <div class="text-[9px] sm:text-[10px] text-white/70 mt-0.5 whitespace-nowrap">vs. proceso manual</div>
             </div>
           </div>
         </div>
@@ -475,19 +481,19 @@
 
       <!-- Architecture diagram -->
       <div class="mb-12 md:mb-16 reveal">
-        <div class="bg-white/[0.03] backdrop-blur border border-white/10 rounded-3xl p-6 sm:p-8 md:p-12">
-          <div class="grid md:grid-cols-3 gap-8 items-center">
+        <div class="bg-white/[0.03] backdrop-blur border border-white/10 rounded-3xl p-5 sm:p-8 md:p-12">
+          <div class="grid md:grid-cols-3 gap-6 sm:gap-8 items-center">
             <!-- Usuario remoto -->
             <div class="text-center">
-              <div class="relative inline-block mb-4">
-                <div class="w-24 h-24 mx-auto rounded-2xl bg-gradient-to-br from-primary-500 to-primary-800 flex items-center justify-center shadow-glow-primary">
-                  <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/></svg>
+              <div class="relative inline-block mb-3 sm:mb-4">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-2xl bg-gradient-to-br from-primary-500 to-primary-800 flex items-center justify-center shadow-glow-primary">
+                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/></svg>
                 </div>
-                <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-green-400 flex items-center justify-center ring-4 ring-ink-900">
-                  <svg class="w-4 h-4 text-ink-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <div class="absolute -top-2 -right-2 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-green-400 flex items-center justify-center ring-4 ring-ink-900">
+                  <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-ink-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 </div>
               </div>
-              <div class="font-bold">Dispositivo del notario</div>
+              <div class="font-bold text-sm sm:text-base">Dispositivo del notario</div>
               <div class="text-xs text-white/60 mt-1">Laptop / tablet / celular autorizado</div>
             </div>
 
@@ -496,26 +502,30 @@
               <div class="arrow-line">
                 <div class="arrow-pulse"></div>
               </div>
+              <!-- Connector line for mobile -->
+              <div class="md:hidden w-px h-8 mx-auto bg-gradient-to-b from-transparent via-gold-500/40 to-gold-500/40 -mt-2 mb-2"></div>
               <div class="inline-flex flex-col items-center">
-                <div class="w-20 h-20 rounded-full bg-gold-500/20 border-2 border-gold-400 flex items-center justify-center mb-3 vpn-ring">
-                  <svg class="w-10 h-10 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gold-500/20 border-2 border-gold-400 flex items-center justify-center mb-3 vpn-ring">
+                  <svg class="w-8 h-8 sm:w-10 sm:h-10 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>
                 </div>
-                <div class="font-bold text-gold-400">Túnel VPN</div>
+                <div class="font-bold text-gold-400 text-sm sm:text-base">Túnel VPN</div>
                 <div class="text-xs text-white/60 mt-1">AES-256 · OpenVPN / WireGuard</div>
               </div>
+              <!-- Connector line for mobile -->
+              <div class="md:hidden w-px h-8 mx-auto bg-gradient-to-b from-gold-500/40 via-gold-500/40 to-transparent mt-2 -mb-2"></div>
             </div>
 
             <!-- Servidor -->
             <div class="text-center">
-              <div class="relative inline-block mb-4">
-                <div class="w-24 h-24 mx-auto rounded-2xl bg-gradient-to-br from-ink-800 to-ink-900 border border-gold-500/40 flex items-center justify-center shadow-glow-gold">
-                  <svg class="w-12 h-12 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z"/></svg>
+              <div class="relative inline-block mb-3 sm:mb-4">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 mx-auto rounded-2xl bg-gradient-to-br from-ink-800 to-ink-900 border border-gold-500/40 flex items-center justify-center shadow-glow-gold">
+                  <svg class="w-10 h-10 sm:w-12 sm:h-12 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z"/></svg>
                 </div>
-                <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-primary-500 flex items-center justify-center ring-4 ring-ink-900">
-                  <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                <div class="absolute -top-2 -right-2 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary-500 flex items-center justify-center ring-4 ring-ink-900">
+                  <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
                 </div>
               </div>
-              <div class="font-bold">Servidor local de la notaría</div>
+              <div class="font-bold text-sm sm:text-base">Servidor local de la notaría</div>
               <div class="text-xs text-white/60 mt-1">PostgreSQL + Redis · Datos cifrados en reposo</div>
             </div>
           </div>
@@ -650,7 +660,7 @@
         </span>
       </div>
 
-      <div id="pricingGrid" class="grid md:grid-cols-3 gap-6 md:gap-6 items-stretch max-w-6xl mx-auto">
+      <div id="pricingGrid" class="grid md:grid-cols-3 gap-5 md:gap-6 items-stretch max-w-6xl mx-auto">
         <!-- Renderizado por JS -->
       </div>
 
@@ -688,48 +698,48 @@
     <div class="hero-orb hero-orb-1 opacity-40"></div>
     <div class="hero-orb hero-orb-2 opacity-30"></div>
 
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 md:gap-16 items-start">
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-start">
       <!-- Left -->
       <div class="reveal">
         <span class="inline-block px-4 py-1.5 rounded-full bg-white/10 backdrop-blur border border-white/20 text-gold-400 text-xs font-bold uppercase tracking-wider mb-5 md:mb-6">Agende su demostración</span>
         <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold mb-5 md:mb-6 leading-tight">Hablemos de su <span class="text-gold-400">notaría</span>.</h2>
         <p class="text-white/80 text-base sm:text-lg leading-relaxed mb-8 md:mb-10">Agendemos una sesión de 30 minutos. Le mostramos el sistema con sus propios casos y usted decide.</p>
 
-        <ul class="space-y-5">
-          <li class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center flex-shrink-0">
+        <ul class="space-y-4 sm:space-y-5">
+          <li class="flex items-start gap-3 sm:gap-4">
+            <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center flex-shrink-0">
               <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
             </div>
-            <div>
-              <div class="text-xs uppercase tracking-wider text-white/60">Correo</div>
-              <a href="mailto:josephantonydev@gmail.com" class="font-semibold text-white hover:text-gold-400 transition-colors">josephantonydev@gmail.com</a>
+            <div class="min-w-0 flex-1">
+              <div class="text-[11px] sm:text-xs uppercase tracking-wider text-white/60">Correo</div>
+              <a href="mailto:josephantonydev@gmail.com" class="font-semibold text-white hover:text-gold-400 transition-colors text-sm sm:text-base break-all">josephantonydev@gmail.com</a>
             </div>
           </li>
-          <li class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center flex-shrink-0">
+          <li class="flex items-start gap-3 sm:gap-4">
+            <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center flex-shrink-0">
               <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
             </div>
-            <div>
-              <div class="text-xs uppercase tracking-wider text-white/60">WhatsApp</div>
-              <a href="https://wa.me/529641173446" class="font-semibold text-white hover:text-gold-400 transition-colors">+52 964 117 3446</a>
+            <div class="min-w-0 flex-1">
+              <div class="text-[11px] sm:text-xs uppercase tracking-wider text-white/60">WhatsApp</div>
+              <a href="https://wa.me/529641173446" class="font-semibold text-white hover:text-gold-400 transition-colors text-sm sm:text-base">+52 964 117 3446</a>
             </div>
           </li>
-          <li class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center flex-shrink-0">
+          <li class="flex items-start gap-3 sm:gap-4">
+            <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center flex-shrink-0">
               <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             </div>
-            <div>
-              <div class="text-xs uppercase tracking-wider text-white/60">Oficinas</div>
-              <div class="font-semibold text-white">Tuxtla Gutiérrez, Chiapas · CDMX</div>
+            <div class="min-w-0 flex-1">
+              <div class="text-[11px] sm:text-xs uppercase tracking-wider text-white/60">Oficinas</div>
+              <div class="font-semibold text-white text-sm sm:text-base">Tuxtla Gutiérrez, Chiapas · CDMX</div>
             </div>
           </li>
-          <li class="flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center flex-shrink-0">
+          <li class="flex items-start gap-3 sm:gap-4">
+            <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center flex-shrink-0">
               <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             </div>
-            <div>
-              <div class="text-xs uppercase tracking-wider text-white/60">Horario</div>
-              <div class="font-semibold text-white">Lun – Vie · 17:00 a 23:00 (CST)</div>
+            <div class="min-w-0 flex-1">
+              <div class="text-[11px] sm:text-xs uppercase tracking-wider text-white/60">Horario</div>
+              <div class="font-semibold text-white text-sm sm:text-base">Lun – Vie · 17:00 a 23:00 (CST)</div>
             </div>
           </li>
         </ul>

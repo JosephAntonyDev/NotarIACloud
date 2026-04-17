@@ -49,13 +49,33 @@ export class NavController {
 
   _bindMenu() {
     if (!this.menuToggle || !this.mobileMenu) return;
+
+    const icon = this.menuToggle.querySelector('svg');
+    const iconOpen = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>';
+    const iconClose = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>';
+
+    const setOpen = (open) => {
+      if (open) {
+        this.mobileMenu.classList.remove('hidden');
+        if (icon) icon.innerHTML = iconClose;
+        this.menuToggle.setAttribute('aria-expanded', 'true');
+      } else {
+        this.mobileMenu.classList.add('hidden');
+        if (icon) icon.innerHTML = iconOpen;
+        this.menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    };
+
     this.menuToggle.addEventListener('click', () => {
-      this.mobileMenu.classList.toggle('hidden');
+      const isHidden = this.mobileMenu.classList.contains('hidden');
+      setOpen(isHidden);
     });
     this.mobileMenu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        this.mobileMenu.classList.add('hidden');
-      });
+      a.addEventListener('click', () => setOpen(false));
+    });
+    // Cierra el menú al pasar a desktop (>= lg)
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024) setOpen(false);
     });
   }
 

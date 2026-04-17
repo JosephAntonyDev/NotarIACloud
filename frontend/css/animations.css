@@ -17,6 +17,13 @@
 .reveal-left { transform: translateX(-40px); }
 .reveal-scale { transform: scale(0.94); }
 
+/* En móvil usamos desplazamiento vertical para evitar scroll horizontal temporal
+   mientras IntersectionObserver aplica .in-view */
+@media (max-width: 1024px) {
+  .reveal-right,
+  .reveal-left { transform: translateY(30px); }
+}
+
 .reveal.in-view,
 .reveal-right.in-view,
 .reveal-left.in-view {
